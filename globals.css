@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  color-scheme: light dark;
+  --color-primary-light: oklch(62.3% 0.214 259.815);
+  --color-primary-dark: oklch(80.9% 0.105 251.813);
+  --color-primary-hover-light: oklch(48.8% 0.243 264.376);
+  --color-primary-hover-dark: oklch(88.2% 0.059 254.128);
+  --bg-page-light: white;
+  --bg-page-dark: #202124;
+  --color-border-light: oklch(92.2% 0 none);
+  --color-border-dark: oklch(37.1% 0 none);
+  --color-text-light: oklch(37.1% 0 none);
+  --color-text-dark: oklch(98.5% 0 none);
+  --color-green-light: oklch(72.3% 0.219 149.579);
+  --color-green-dark: oklch(87.1% 0.15 154.449);
+  --color-red-light: oklch(63.7% 0.237 25.331);
+  --color-red-dark: oklch(80.8% 0.114 19.571);
+
+  --color-primary: light-dark(
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  --bg-page: light-dark(var(--bg-page-light), var(--bg-page-dark));
+  --color-border: light-dark(
+    var(--color-border-light),
+    var(--color-border-dark)
+  );
+  --color-text: light-dark(var(--color-text-light), var(--color-text-dark));
+  --color-red: light-dark(var(--color-red-light), var(--color-red-dark));
+  --color-green: light-dark(var(--color-green-light), var(--color-green-dark));
+  --color-text-inverse: light-dark(
+    var(--color-text-dark),
+    var(--color-text-light)
+  );
+  --color-primary-hover: light-dark(
+    var(--color-primary-hover-light),
+    var(--color-primary-hover-dark)
+  );
+}
+
+button {
+  cursor: pointer;
+}

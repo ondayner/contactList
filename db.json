@@ -1,0 +1,15 @@
+{
+  "contacts": [
+    {
+      "name": "Gabriel Perez",
+      "phone": "04245675656",
+      "id": "FJKpUClJieo"
+    },
+    {
+      "name": "Ondayner Ramirez",
+      "phone": "04265721823",
+      "id": "hjVlFGol5S4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <div id="nav-container">
+        <div id="nav-logo-container">
+          <ion-icon id="nav-logo-icon" name="call-outline"></ion-icon>
+        </div>
+        <div id="nav-btn-container">
+          <button id="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+        <div id="nav-links-container">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="./about">About us</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <div id="main-contacts-container">
+        <!-- Crear contacto formulario -->
+        <form id="main-contacts-form">
+          <div id="main-contacts-form-inputs-container">
+            <!-- Input del nombre -->
+            <div class="main-contacts-form-input-container">
+              <label
+                class="main-contacts-form-label"
+                for="main-contact-name-input"
+              >
+                Nombre
+              </label>
+              <input
+                id="main-contact-name-input"
+                class="main-contacts-form-input"
+                type="text"
+              />
+              <p class="main-contact-input-text">
+                Tiene que tener nombre y apellido.
+                <br />
+                Ambos tienen que comenzar con mayusculas.
+              </p>
+            </div>
+
+            <!-- Input del teléfono -->
+            <div class="main-contacts-form-input-container">
+              <label
+                class="main-contacts-form-label"
+                for="main-contact-phone-input"
+              >
+                Teléfono
+              </label>
+              <input
+                id="main-contact-phone-input"
+                class="main-contacts-form-input"
+                type="text"
+              />
+              <p class="main-contact-input-text">
+                Tiene que ser un número de teléfono válido.
+              </p>
+            </div>
+          </div>
+          <button id="main-contacts-form-submit-btn" disabled>
+            <ion-icon
+              id="main-contacts-form-submit-btn-icon"
+              name="add-outline"
+            ></ion-icon>
+          </button>
+        </form>
+
+        <ul id="contacts-list">
+          <template id="contacts-list-item-template">
+            <li class="contacts-list-item">
+              <div class="contacts-list-item-inputs-container">
+                <!-- Input del nombre -->
+                <div class="contacts-list-item-input-container">
+                  <label
+                    class="contacts-list-item-label"
+                    for="contacts-list-item-name-input"
+                  >
+                    Nombre
+                  </label>
+                  <input
+                    name="contacts-list-item-name-input"
+                    class="contacts-list-item-form-input"
+                    value="Gabriel Garcia"
+                    type="text"
+                    readonly
+                  />
+                </div>
+
+                <!-- Input del teléfono -->
+                <div class="contacts-list-item-input-container">
+                  <label
+                    class="contacts-list-item-label"
+                    for="contacts-list-item-phone-input"
+                  >
+                    Teléfono
+                  </label>
+                  <input
+                    name="contacts-list-item-phone-input"
+                    class="contacts-list-item-form-input"
+                    type="text"
+                    value="04127778899"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="contacts-list-item-btns-container">
+                <button class="contacts-list-item-btn-edit">
+                  <ion-icon
+                    class="contacts-list-item-btn-edit-icon"
+                    name="create-outline"
+                  ></ion-icon>
+                </button>
+                <button class="contacts-list-item-btn-delete">
+                  <ion-icon
+                    id="contacts-list-item-btn-delete-icon"
+                    name="close-outline"
+                  ></ion-icon>
+                </button>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="contacts.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="fetchService.js"></script>
+  </body>
+</html>
