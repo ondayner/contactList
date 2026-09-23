@@ -12,7 +12,8 @@ let contacts = [];
 
 const PORT = 3000;
 const API_RESOURCE = "/contacts";
-const API_URL = `http://localhost:${PORT}${API_RESOURCE}`;
+//const API_URL = `http://localhost:${PORT}${API_RESOURCE}`;
+const API_URL = `https://api-contactos-oranch.onrender.com/contacts`;
 
 /**
  * Crea un nuevo contacto y lo agrega a la lista de contactos.
